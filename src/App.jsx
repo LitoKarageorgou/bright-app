@@ -1,11 +1,7 @@
+import WelcomeScreen from './components/WelcomeScreen';
+
 function App() {
-  return (
-    <>
-      <div>
-        <h1>Hello Bright!</h1>
-      </div>
-    </>
-  )
+  return <WelcomeScreen />;
 }
 
-export default App
+export default App;
