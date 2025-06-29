@@ -18,9 +18,9 @@
   animation: pop-in 1s ease forwards;
   font-family:  var(--font-primary);
   font-size: 4.8rem;
-  /* letter-spacing: -0.3px; */
+  letter-spacing: -0.5px;
   color: var( --color-accent-blue);
-  -webkit-text-stroke: 3.3px black;
+  -webkit-text-stroke: 3.5px black;
    /* text-shadow:
     -2px -2px 0 #000,
      2px -2px 0 #000,
