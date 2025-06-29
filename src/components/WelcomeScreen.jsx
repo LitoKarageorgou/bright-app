@@ -3,10 +3,10 @@ import styles from "./WelcomeScreen.module.css";
 import logo from "../assets/logo-sheep-no-bg.png";
 
 const WelcomeScreen = () => {
-  useEffect(() => {
-    const audio = new Audio("/sheep-sound.mp3"); // from public folder
-    audio.play();
-  }, []);
+  // useEffect(() => {
+  //   const audio = new Audio("/sheep-sound.mp3"); // from public folder
+  //   audio.play();
+  // }, []);
 
   return (
     <div className={styles.welcomeScreen}>
