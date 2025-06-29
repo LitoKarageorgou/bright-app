@@ -1,0 +1,52 @@
+@font-face{
+  font-family: 'Volkswagen-Heavy';
+  src: url('./assets/fonts/Volkswagen-Heavy.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary-text: #414444;
+  --color-secondary-text: #000000;
+  --color-bg: #ffffff;
+  --color-accent-blue: #92c8fd;
+  --color-accent-cyan: #23caff;
+  --color-accent-yellow: #ffe36e;
+  --color-accent-pink: #e899a0;
+  --color-accent-green: #cbe269;
+  --font-primary: 'Volkswagen-Heavy';
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-primary-text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img.icon,
+svg.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
