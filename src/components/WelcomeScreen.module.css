@@ -7,7 +7,7 @@
 }
 
 .welcomeLogo {
-  max-width: 50%;
+  max-width: 45%;
   height: auto;
 }
 
@@ -17,7 +17,7 @@
   transform: translate(30px) scale(0.9);
   animation: pop-in 1s ease forwards;
   font-family:  var(--font-primary);
-  font-size: 4.8rem;
+  font-size: 4.7rem;
   letter-spacing: -0.5px;
   color: var( --color-accent-blue);
   -webkit-text-stroke: 3.5px black;
