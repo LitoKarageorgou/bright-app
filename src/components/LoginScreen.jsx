@@ -17,8 +17,10 @@ function LoginScreen() {
 
   return (
     <div className={styles.loginScreen}>
-      <img src={sheep} alt="Sheep logo" className={styles.logo} />
-      <h2 className={styles.title}>Sing In</h2>
+      <div className={styles.header}>
+        <img src={sheep} alt="Sheep logo" className={styles.logo} />
+        <h2 className={styles.title}>Sign In</h2>
+      </div>
 
       <form className={styles.form} onSubmit={handleSubmit}>
         <label>Email</label>
