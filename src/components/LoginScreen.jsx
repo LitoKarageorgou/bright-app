@@ -4,15 +4,40 @@ import styles from "./LoginScreen.module.css";
 import sheep from "../assets/sheep-right.png";
 
 function LoginScreen() {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username.trim()) {
-      localStorage.setItem("username", username);
-      navigate("/home"); // or next screen
+    let valid = true;
+
+    // Reset errors
+    setEmailError("");
+    setPasswordError("");
+
+    // Email validation
+    if (!email) {
+      setEmailError("Email is required.");
+      valid = false;
+    } else if (!email.includes("@")) {
+      setEmailError("Enter a valid email address.");
+      valid = false;
     }
+
+    // Password validation
+    if (!password) {
+      setPasswordError("Password is required.");
+      valid = false;
+    }
+
+    if (!valid) return;
+
+    localStorage.setItem("username", email);
+    navigate("/grade");
   };
 
   return (
@@ -26,13 +51,20 @@ function LoginScreen() {
         <label>Email</label>
         <input
           type="text"
-          placeholder="Enter your username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
+        <p className={styles.error}>{emailError || "\u00A0"}</p>
 
         <label>Password</label>
-        <input type="password" placeholder="Enter your password" />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <p className={styles.error}>{passwordError || "\u00A0"}</p>
 
         <div className={styles.footer}>
           <span className={styles.signupText}>

@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import WelcomeScreen from './components/WelcomeScreen';
 import LoginScreen from './components/LoginScreen';
+import GradeSelectionScreen from './components/GradeSelectionScreen';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LoaderRedirect />} />
         <Route path="/login" element={<LoginScreen />} />
+        <Route path="/grade" element={<GradeSelectionScreen />} />
       </Routes>
     </Router>
   );
