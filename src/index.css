@@ -26,6 +26,8 @@
   --color-accent-red: #f47c7c;
   --font-primary: "Volkswagen-Heavy";
   --font-secondary: "Poppins";
+  --radius-main: 8px;
+  --shadow-main: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 html {
@@ -53,7 +55,7 @@ button {
 button,
 input,
 textarea {
-  border-radius: 8px;
+  border-radius: var(--radius-main);
 }
 
 img.icon,
