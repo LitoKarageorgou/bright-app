@@ -1,10 +1,12 @@
 import styles from './GradeSelectionScreen.module.css';
 import ScreenHeader from "../components/ScreenHeader";
+import Card from './Card';
 
 const GradeSelectionScreen = () => {
   return (
     <div className={styles.container}>
       <ScreenHeader title="Grade" />
+      <Card>
       <h3 className={styles.sectionTitle}>Elementary School</h3>
       <div className={styles.buttonRow}>
         <button className={`${styles.gradeButton} ${styles.green}`}>Grade 1</button>
@@ -36,6 +38,7 @@ const GradeSelectionScreen = () => {
       <div className={styles.buttonRow}>
         <button className={`${styles.gradeButton} ${styles.yellow}`}>Grade 3</button>
       </div>
+      </Card>
     </div>
   );
 };
