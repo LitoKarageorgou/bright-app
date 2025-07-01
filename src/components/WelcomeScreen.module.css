@@ -17,10 +17,10 @@
   transform: translate(30px) scale(0.9);
   animation: pop-in 1s ease forwards;
   font-family:  var(--font-primary);
-  font-size: 4.7rem;
+  font-size: 4.6rem;
   letter-spacing: -0.5px;
   color: var( --color-accent-blue);
-  -webkit-text-stroke: 3.5px black;
+  -webkit-text-stroke: 2.3px black;
    /* text-shadow:
     -2px -2px 0 #000,
      2px -2px 0 #000,

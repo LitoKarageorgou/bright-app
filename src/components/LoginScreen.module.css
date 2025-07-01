@@ -15,7 +15,7 @@
 }
 
 .logo {
-  width: 150px;
+  width: 155px;
 }
 
 .title {
@@ -29,7 +29,7 @@
 
 .form {
   width: 100%;
-  max-width: 280px;
+  max-width: 285px;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -38,7 +38,7 @@
 input {
   padding: 0.6rem 0.8rem;
   border: 1px solid #ccc;
-  font-size: 0.9rem;
+  /* font-size: 1rem; */
   font-family: var(--font-secondary);
   font-style: bold;
 }
@@ -51,7 +51,7 @@ input {
 }
 
 .signupText {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .signupText a{
@@ -61,14 +61,15 @@ input {
 .arrowButton {
   background-color: var(--color-accent-green);
   color: var(--color-primary-text);
-  padding: 0.5rem 0.75rem;
+  padding: 0.65rem 0.95rem;
   font-size: 1.2rem;
   cursor: pointer;
 }
 
 .error {
-  color: var(--color-accent-pink);
+  color: var(--color-accent-red);
   font-size: 0.75rem;
-  margin-top: -5px;
+  padding-left: 1px;
+  margin-top: -3px;
   height: 0.8rem;
 }
