@@ -1,13 +1,7 @@
-import { useEffect } from "react";
 import styles from "./WelcomeScreen.module.css";
 import logo from "../assets/logo-sheep-no-bg.png";
 
 const WelcomeScreen = () => {
-  // useEffect(() => {
-  //   const audio = new Audio("/sheep-sound.mp3"); // from public folder
-  //   audio.play();
-  // }, []);
-
   return (
     <div className={styles.welcomeScreen}>
       <img src={logo} alt="Bright logo" className={styles.welcomeLogo} />

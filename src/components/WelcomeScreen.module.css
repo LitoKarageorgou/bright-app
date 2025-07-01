@@ -17,17 +17,11 @@
   transform: translate(30px) scale(0.9);
   animation: pop-in 1s ease forwards;
   font-family:  var(--font-primary);
-  font-size: 4.6rem;
+  font-size: 4.4rem;
   letter-spacing: -0.5px;
   color: var( --color-accent-blue);
-  -webkit-text-stroke: 2.3px black;
-   /* text-shadow:
-    -2px -2px 0 #000,
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000; */
-    /* margin: 0.1rem; */
-   margin-top: -0.7rem;
+  -webkit-text-stroke: 2.9px black;
+   margin-top: -0.6rem;
 }
 
 .word span:nth-child(1) {

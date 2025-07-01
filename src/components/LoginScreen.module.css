@@ -29,7 +29,7 @@
 
 .form {
   width: 100%;
-  max-width: 285px;
+  max-width: 290px;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
