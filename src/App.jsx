@@ -4,10 +4,12 @@ import { useEffect } from 'react';
 import WelcomeScreen from './components/WelcomeScreen';
 import LoginScreen from './components/LoginScreen';
 import GradeSelectionScreen from './components/GradeSelectionScreen';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<LoaderRedirect />} />
         <Route path="/login" element={<LoginScreen />} />
