@@ -4,6 +4,7 @@ import styles from "./GradeSelectionScreen.module.css";
 import ScreenHeader from "../components/ScreenHeader";
 import Card from "./Card";
 import Modal from "../components/Modal";
+import BottomNav from "./BottomNav";
 
 const GradeSelectionScreen = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -124,6 +125,7 @@ const GradeSelectionScreen = () => {
         actionLabel="Go to Grade 3"
         onAction={handleGoToGrade3}
       />
+      <BottomNav />
     </div>
   );
 };

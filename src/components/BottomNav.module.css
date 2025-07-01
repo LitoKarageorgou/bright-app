@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-main);
+  padding: 0.5rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.iconButton {
+  background: none;
+  padding: 0.55rem;
+}
+
+.icon {
+  font-size: 29px;
+  color: var(--color-primary-text);
+}
