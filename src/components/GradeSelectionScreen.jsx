@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import styles from "./GradeSelectionScreen.module.css";
 import ScreenHeader from "../components/ScreenHeader";
 import Card from "./Card";
@@ -7,6 +8,10 @@ import Modal from "../components/Modal";
 import BottomNav from "./BottomNav";
 
 const GradeSelectionScreen = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
 
