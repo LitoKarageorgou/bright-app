@@ -21,7 +21,7 @@ const GradeSelectionScreen = () => {
 
   const handleGoToGrade3 = () => {
     setIsModalOpen(false);
-    navigate("/grade3");
+    navigate("/courses");
   };
 
   return (
@@ -46,7 +46,7 @@ const GradeSelectionScreen = () => {
         <div className={styles.buttonRow}>
           <button
             className={`${styles.gradeButton} ${styles.blue}`}
-            onClick={handleGoToGrade3}
+            onClick={() => navigate("/courses")}
           >
             Grade 3
           </button>

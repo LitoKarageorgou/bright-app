@@ -38,13 +38,17 @@
 }
 
 .button {
-  padding: 0.5rem 1rem;
+  padding: 0.85rem 1.15rem;
   background-color: #ccc;
   font-weight: 600;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
 
 .primaryButton {
-  padding: 0.5rem 1rem;
+  padding: 0.85rem 1.15rem;
   background-color: var(--color-accent-blue);
   font-weight: 600;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
