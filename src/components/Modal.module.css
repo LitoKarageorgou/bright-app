@@ -21,7 +21,7 @@
 }
 
 .title {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -42,7 +42,8 @@
   background-color: #ccc;
   font-weight: 600;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: var(--color-primary-text);
 }
 
 .primaryButton {
@@ -50,5 +51,6 @@
   background-color: var(--color-accent-blue);
   font-weight: 600;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: var(--color-primary-text);
 }

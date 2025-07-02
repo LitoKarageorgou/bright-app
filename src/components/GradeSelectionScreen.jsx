@@ -59,13 +59,13 @@ const GradeSelectionScreen = () => {
         </div>
         <div className={styles.buttonRow}>
           <button
-            className={`${styles.gradeButton} ${styles.pink}`}
+            className={`${styles.gradeButton} ${styles.orange}`}
             onClick={handleUnavailableGrade}
           >
             Grade 5
           </button>
           <button
-            className={`${styles.gradeButton} ${styles.mint}`}
+            className={`${styles.gradeButton} ${styles.pink}`}
             onClick={handleUnavailableGrade}
           >
             Grade 6
@@ -75,13 +75,13 @@ const GradeSelectionScreen = () => {
         <h3 className={styles.sectionTitle}>Middle School</h3>
         <div className={styles.buttonRow}>
           <button
-            className={`${styles.gradeButton} ${styles.orange}`}
+            className={`${styles.gradeButton} ${styles.green}`}
             onClick={handleUnavailableGrade}
           >
             Grade 1
           </button>
           <button
-            className={`${styles.gradeButton} ${styles.cyan}`}
+            className={`${styles.gradeButton} ${styles.yellow}`}
             onClick={handleUnavailableGrade}
           >
             Grade 2
@@ -89,7 +89,7 @@ const GradeSelectionScreen = () => {
         </div>
         <div className={styles.buttonRow}>
           <button
-            className={`${styles.gradeButton} ${styles.purple}`}
+            className={`${styles.gradeButton} ${styles.blue}`}
             onClick={handleUnavailableGrade}
           >
             Grade 3
@@ -99,13 +99,13 @@ const GradeSelectionScreen = () => {
         <h3 className={styles.sectionTitle}>High School</h3>
         <div className={styles.buttonRow}>
           <button
-            className={`${styles.gradeButton} ${styles.pink}`}
+            className={`${styles.gradeButton} ${styles.green}`}
             onClick={handleUnavailableGrade}
           >
             Grade 1
           </button>
           <button
-            className={`${styles.gradeButton} ${styles.green}`}
+            className={`${styles.gradeButton} ${styles.yellow}`}
             onClick={handleUnavailableGrade}
           >
             Grade 2
@@ -113,7 +113,7 @@ const GradeSelectionScreen = () => {
         </div>
         <div className={styles.buttonRow}>
           <button
-            className={`${styles.gradeButton} ${styles.yellow}`}
+            className={`${styles.gradeButton} ${styles.blue}`}
             onClick={handleUnavailableGrade}
           >
             Grade 3

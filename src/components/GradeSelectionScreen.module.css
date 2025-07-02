@@ -9,7 +9,7 @@
 
 .sectionTitle {
   font-family: var(--font-primary);
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   margin: 2rem 0 1.4rem;
   color: var(--color-primary-text);
   text-align: center;
@@ -66,3 +66,6 @@
   background-color: var(--color-accent-mint);
 }
 
+.orchid {
+  background-color: var(--color-accent-orchid);
+}
