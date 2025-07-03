@@ -136,7 +136,7 @@ const HistoryChaptersScreen = () => {
         actionLabel="Go to Hercules"
         onAction={() => {
           setIsModalOpen(false);
-          navigate("/chapters/history/hercules");
+          setExpandedChapter(2);
         }}
         primaryButtonClass={styles.orange}
       />
