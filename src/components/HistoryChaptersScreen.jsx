@@ -81,7 +81,7 @@ const HistoryChaptersScreen = () => {
         className={`${styles.courseButton} ${styles.center}`}
         onClick={() => handleClick("intro")}
       >
-        <span className={styles.chapterTitle}>Introduction</span>
+        <span>Introduction</span>
       </div>
 
       {Object.entries(grouped).map(([group, items]) => (
@@ -109,7 +109,7 @@ const HistoryChaptersScreen = () => {
                     <img src={sheep} alt="Mascot" className={styles.mascot} />
                     <button
                       className={styles.startButton}
-                      onClick={() => navigate("/chapters/history/hercules")}
+                      onClick={() => navigate("/courses/history/hercules/video")}
                     >
                       Start for 120 XP
                     </button>
@@ -125,7 +125,7 @@ const HistoryChaptersScreen = () => {
         className={`${styles.courseButton} ${styles.center}`}
         onClick={() => handleClick("glossary")}
       >
-        <span className={styles.chapterTitle}>Glossary</span>
+        <span>Glossary</span>
       </div>
 
       <Modal

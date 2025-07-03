@@ -11,11 +11,10 @@
   color: var(--color-primary-text);
   font-family: var(--font-primary);
   font-size: 1rem;
-  margin: 1.25rem 0 0.5rem 0;
+  margin: 1.25rem 0 0.8rem 0;
 }
 
 .category {
-  font-family: var(--font-heading);
   font-size: 1.2rem;
   color: var(--dark);
   margin: 1.5rem 0 0.75rem;
@@ -24,18 +23,22 @@
 .courseButton {
   background: white;
   box-shadow: var(--shadow-main);
-  width: 315px;
-  height: 57px;
+  width: 325px;
+  height: 58px;
   padding: 0.7rem;
   margin: 0.6rem auto;
   font-weight: 600;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
   border-radius: var(--radius-main);
-  transition: all 0.3s ease; /* smooth expand */
+  transition: all 0.3s ease;  /* smooth expand */
+}
+
+.courseButton:last-of-type {
+  margin-top: 0;
 }
 
 .chapterRow {
@@ -104,13 +107,33 @@
 }
 
 /* Color circles */
-.blue    { background-color: var(--color-accent-blue); }
-.yellow  { background-color: var(--color-accent-yellow); }
-.orange  { background-color: var(--color-accent-orange); }
-.mint    { background-color: var(--color-accent-mint); }
-.pink    { background-color: var(--color-accent-pink); }
-.cyan    { background-color: var(--color-accent-cyan); }
-.green   { background-color: var(--color-accent-green); }
-.purple  { background-color: var(--color-accent-purple); }
-.red     { background-color: var(--color-accent-red); }
-.orchid  { background-color: var(--color-accent-orchid); }
+.blue {
+  background-color: var(--color-accent-blue);
+}
+.yellow {
+  background-color: var(--color-accent-yellow);
+}
+.orange {
+  background-color: var(--color-accent-orange);
+}
+.mint {
+  background-color: var(--color-accent-mint);
+}
+.pink {
+  background-color: var(--color-accent-pink);
+}
+.cyan {
+  background-color: var(--color-accent-cyan);
+}
+.green {
+  background-color: var(--color-accent-green);
+}
+.purple {
+  background-color: var(--color-accent-purple);
+}
+.red {
+  background-color: var(--color-accent-red);
+}
+.orchid {
+  background-color: var(--color-accent-orchid);
+}

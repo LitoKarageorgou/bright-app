@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: var(--color-primary-text);
+}
+
+.card {
+  background: white;
+  box-shadow: var(--shadow-main);
+  border-radius: var(--radius-main);
+  padding: 1rem;
+  width: 85%;
+  text-align: center;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: var(--radius-main);
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  color: var(--color-primary-text);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent-lightgray);
+  border-radius: 50%;
+}
+
+.active {
+  background: var(--color-accent-yellow);
+}
+
+.iconStep {
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+  color: var(--color-accent-green);
+}

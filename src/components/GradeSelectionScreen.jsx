@@ -26,7 +26,7 @@ const GradeSelectionScreen = () => {
 
   return (
     <div className={styles.container}>
-      <ScreenHeader title="Grade" />
+      <ScreenHeader title="Grades" />
       <Card>
         <h3 className={styles.sectionTitle}>Elementary School</h3>
         <div className={styles.buttonRow}>

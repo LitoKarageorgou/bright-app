@@ -37,7 +37,7 @@ function LoginScreen() {
     if (!valid) return;
 
     localStorage.setItem("username", email);
-    navigate("/grade");
+    navigate("/grades");
   };
 
   return (

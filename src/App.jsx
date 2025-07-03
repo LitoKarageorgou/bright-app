@@ -6,6 +6,7 @@ import LoginScreen from './components/LoginScreen';
 import GradeSelectionScreen from './components/GradeSelectionScreen';
 import CourseSelectionScreen from './components/CourseSelectionScreen';
 import HistoryChaptersScreen from './components/HistoryChaptersScreen';
+import HerculesVideoScreen from './components/HerculesVideoScreen';
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<LoaderRedirect />} />
         <Route path="/login" element={<LoginScreen />} />
-        <Route path="/grade" element={<GradeSelectionScreen />} />
+        <Route path="/grades" element={<GradeSelectionScreen />} />
         <Route path="/courses" element={<CourseSelectionScreen />} />
         <Route path="/courses/history" element={<HistoryChaptersScreen />} />
+        <Route path="/courses/history/hercules/video" element={<HerculesVideoScreen />} />
       </Routes>
     </Router>
   );
