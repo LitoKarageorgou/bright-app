@@ -85,6 +85,7 @@ const HistoryChaptersScreen = () => {
           setIsModalOpen(false);
           navigate("/chapters//history/hercules"); // replace with route if needed
         }}
+        primaryButtonClass={styles.orange}
       />
 
       <BottomNav />
