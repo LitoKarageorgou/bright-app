@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: var(--color-primary-text);
+  text-align: center;
+}
+
+.category {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--dark);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.chapterList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chapterItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+}
+
+.chapterNumber {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Color circles */
+.blue { background-color: var(--color-accent-blue); }
+.yellow { background-color: var(--color-accent-yellow); }
+.orange { background-color: var(--color-accent-orange); }
+.mint { background-color: var(--color-accent-mint); }
+.pink { background-color: var(--color-accent-pink); }
+.cyan { background-color: var(--color-accent-cyan); }
+.green { background-color: var(--color-accent-green); }
+.purple { background-color: var(--color-accent-purple); }
+.red { background-color: var(--color-accent-red); }
+.orchid { background-color: var(--color-accent-orchid); }

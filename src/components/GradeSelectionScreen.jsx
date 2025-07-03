@@ -99,13 +99,13 @@ const GradeSelectionScreen = () => {
         <h3 className={styles.sectionTitle}>High School</h3>
         <div className={styles.buttonRow}>
           <button
-            className={`${styles.gradeButton} ${styles.green}`}
+            className={`${styles.gradeButton} ${styles.purple}`}
             onClick={handleUnavailableGrade}
           >
             Grade 1
           </button>
           <button
-            className={`${styles.gradeButton} ${styles.yellow}`}
+            className={`${styles.gradeButton} ${styles.orange}`}
             onClick={handleUnavailableGrade}
           >
             Grade 2
@@ -113,7 +113,7 @@ const GradeSelectionScreen = () => {
         </div>
         <div className={styles.buttonRow}>
           <button
-            className={`${styles.gradeButton} ${styles.blue}`}
+            className={`${styles.gradeButton} ${styles.pink}`}
             onClick={handleUnavailableGrade}
           >
             Grade 3

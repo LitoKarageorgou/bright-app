@@ -5,6 +5,7 @@ import WelcomeScreen from './components/WelcomeScreen';
 import LoginScreen from './components/LoginScreen';
 import GradeSelectionScreen from './components/GradeSelectionScreen';
 import CourseSelectionScreen from './components/CourseSelectionScreen';
+import HistoryChaptersScreen from './components/HistoryChaptersScreen';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/grade" element={<GradeSelectionScreen />} />
         <Route path="/courses" element={<CourseSelectionScreen />} />
+        <Route path="/courses/history" element={<HistoryChaptersScreen />} />
       </Routes>
     </Router>
   );
