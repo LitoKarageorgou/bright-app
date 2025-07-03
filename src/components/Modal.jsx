@@ -1,6 +1,14 @@
 import styles from "./Modal.module.css";
 
-const Modal = ({ isOpen, onClose, title, message, actionLabel, onAction }) => {
+const Modal = ({
+  isOpen,
+  onClose,
+  title,
+  message,
+  actionLabel,
+  onAction,
+  primaryButtonClass,
+}) => {
   if (!isOpen) return null;
 
   return (
@@ -11,7 +19,10 @@ const Modal = ({ isOpen, onClose, title, message, actionLabel, onAction }) => {
         <div className={styles.buttons}>
           <button onClick={onClose} className={styles.button}>Close</button>
           {onAction && (
-            <button onClick={onAction} className={styles.primaryButton}>
+            <button
+              onClick={onAction}
+              className={`${styles.primaryButton} ${primaryButtonClass || ""}`}
+            >
               {actionLabel}
             </button>
           )}

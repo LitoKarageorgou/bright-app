@@ -109,6 +109,7 @@ const CourseSelectionScreen = () => {
         message="This is a prototype. Only the History course is available."
         actionLabel="Go to History"
         onAction={handleGoToHistory}
+        primaryButtonClass={styles.yellow}
       />
       <BottomNav />
     </div>

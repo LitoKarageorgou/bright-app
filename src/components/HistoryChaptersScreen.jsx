@@ -1,14 +1,14 @@
-import { useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import ScreenHeader from "../components/ScreenHeader";
-import Card from "../components/Card";
 import BottomNav from "../components/BottomNav";
+import Modal from "../components/Modal";
 import styles from "./HistoryChaptersScreen.module.css";
 
 const chapters = [
   { number: 1, title: "The Creation of the World", color: "blue", group: "Mythology" },
-  { number: 2, title: "Hercules", color: "yellow", group: "Mythology" },
-  { number: 3, title: "Theseus", color: "orange", group: "Mythology" },
+  { number: 2, title: "Hercules", color: "orange", group: "Mythology" },
+  { number: 3, title: "Theseus", color: "yellow", group: "Mythology" },
   { number: 4, title: "The Argonaut Expedition", color: "mint", group: "Mythology" },
   { number: 5, title: "The Trojan War", color: "pink", group: "Mythology" },
   { number: 6, title: "The Adventures of Odysseus", color: "cyan", group: "Mythology" },
@@ -19,15 +19,20 @@ const chapters = [
 ];
 
 const HistoryChaptersScreen = () => {
-  // const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const handleClick = (number) => {
-    console.log("Selected chapter:", number);
-    // You can route here later if needed
+    if (number === 2) {
+      console.log("Navigate to Hercules");
+      navigate("/chapters//history/hercules"); // uncomment later when routing is ready
+    } else {
+      setIsModalOpen(true);
+    }
   };
 
   const grouped = chapters.reduce((acc, ch) => {
@@ -39,24 +44,49 @@ const HistoryChaptersScreen = () => {
   return (
     <div className={styles.container}>
       <ScreenHeader title="Chapters" />
-      <Card>
-        <p className={styles.intro}>Introduction</p>
-        {Object.entries(grouped).map(([group, items]) => (
-          <div key={group}>
-            <h3 className={styles.sectionTitle}>{group}</h3>
-            {items.map(({ number, title, color }) => (
-              <div
-                key={number}
-                className={styles.chapterRow}
-                onClick={() => handleClick(number)}
-              >
-                <div className={`${styles.circle} ${styles[color]}`}>{number}</div>
-                <span className={styles.chapterTitle}>{title}</span>
+      <p className={styles.subtitle}>History - Grade 3 - Elementary</p>
+
+      {/* Introduction button */}
+      <div className={`${styles.courseButton} ${styles.center}`} onClick={() => handleClick("intro")}>
+        <span className={styles.chapterTitle}>Introduction</span>
+      </div>
+
+      {/* Grouped chapters */}
+      {Object.entries(grouped).map(([group, items]) => (
+        <div key={group}>
+          <h3 className={styles.sectionTitle}>{group}</h3>
+          {items.map(({ number, title, color }) => (
+            <div
+              key={number}
+              className={styles.courseButton}
+              onClick={() => handleClick(number)}
+            >
+              <div className={`${styles.chapterNumber} ${styles[color]}`}>
+                {number}
               </div>
-            ))}
-          </div>
-        ))}
-      </Card>
+              <span className={styles.chapterTitle}>{title}</span>
+            </div>
+          ))}
+        </div>
+      ))}
+
+      {/* Glossary button */}
+      <div className={`${styles.courseButton} ${styles.center}`} onClick={() => handleClick("glossary")}>
+        <span className={styles.chapterTitle}>Glossary</span>
+      </div>
+
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Demo Access Only"
+        message="This is a prototype. Only the Hercules chapter is available."
+        actionLabel="Go to Hercules"
+        onAction={() => {
+          setIsModalOpen(false);
+          navigate("/chapters//history/hercules"); // replace with route if needed
+        }}
+      />
+
       <BottomNav />
     </div>
   );
