@@ -28,7 +28,7 @@ function LoaderRedirect() {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/login');
-    }, 4000); // 4 seconds delay
+    }, 5000); // 5 seconds delay
     return () => clearTimeout(timer);
   }, [navigate]);
 

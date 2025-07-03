@@ -17,10 +17,9 @@
   transform: translate(30px) scale(0.9);
   animation: pop-in 1s ease forwards;
   font-family:  var(--font-primary);
-  font-size: 4.4rem;
+  font-size: 4.2rem;
   letter-spacing: -0.5px;
-  color: var( --color-accent-blue);
-  -webkit-text-stroke: 3px black;
+  color: var( --color-font-primary);
    margin-top: -0.6rem;
 }
 
