@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 5rem;
-  margin-top: 4rem;
+  margin-top: 3.9rem;
 }
 
 .title {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
   margin: 1rem 0;
   color: var(--color-primary-text);
 }
@@ -17,8 +17,7 @@
   background: white;
   box-shadow: var(--shadow-main);
   border-radius: var(--radius-main);
-  padding: 1rem;
-  width: 85%;
+  width: 79%;
   text-align: center;
 }
 
@@ -29,31 +28,31 @@
 }
 
 .description {
-  font-family: var(--font-secondary);
-  font-weight: 600;
   color: var(--color-primary-text);
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
 }
 
-.pagination {
+.arrowButton {
+  background-color: var(--color-accent-yellow);
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  color: var(--color-primary-text);
+  font-family: var(--font-primary);
+}
+
+.arrowWrapper {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 0.5rem;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  background: var(--color-accent-lightgray);
-  border-radius: 50%;
-}
-
-.active {
-  background: var(--color-accent-yellow);
-}
-
-.iconStep {
-  font-size: 1.4rem;
-  margin-top: 0.8rem;
-  color: var(--color-accent-green);
+  justify-content: flex-end;
+  padding-right: 2.5rem;
 }

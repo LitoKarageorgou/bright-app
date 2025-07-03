@@ -75,7 +75,7 @@ const HistoryChaptersScreen = () => {
   return (
     <div className={styles.container}>
       <ScreenHeader title="Chapters" />
-      <p className={styles.subtitle}>History - Grade 3 - Elementary School</p>
+      <p className={styles.subtitle}>History • Grade 3 • Elementary</p>
 
       <div
         className={`${styles.courseButton} ${styles.center}`}

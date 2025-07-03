@@ -36,7 +36,7 @@ const CourseSelectionScreen = () => {
   return (
     <div className={styles.container}>
       <ScreenHeader title="Courses" />
-      <p className={styles.subtitle}>Grade 3 – Elementary School</p>
+      <p className={styles.subtitle}>Grade 3 • Elementary School</p>
         <div className={styles.grid}>
           <button className={styles.courseButton} onClick={handleGoToHistory}>
             <div className={`${styles.iconCircle} ${styles.yellow}`}>
