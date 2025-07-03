@@ -54,7 +54,7 @@ input {
 }
 
 .signupText a {
-  color: var(--color-accent-cyan);
+  color: rgb(79, 79, 199);
 }
 
 .arrowButton {

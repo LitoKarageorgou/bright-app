@@ -9,8 +9,8 @@
 
 .sectionTitle {
   font-family: var(--font-primary);
-  font-size: 1.28rem;
-  margin: 2rem 0 1.4rem;
+  font-size: 1.29rem;
+  margin: 1.9rem 0 1.4rem;
   color: var(--color-primary-text);
   text-align: center;
 }
@@ -59,12 +59,4 @@
 
 .orange{
   background-color: var(--color-accent-orange);
-}
-
-.mint{
-  background-color: var(--color-accent-mint);
-}
-
-.orchid {
-  background-color: var(--color-accent-orchid);
 }
