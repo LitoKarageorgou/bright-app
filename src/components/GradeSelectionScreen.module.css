@@ -9,7 +9,9 @@
 
 .sectionTitle {
   font-family: var(--font-primary);
-  font-size: 1.29rem;
+  font-size: 1.2rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antiliased;
   margin: 1.9rem 0 1.4rem;
   color: var(--color-primary-text);
   text-align: center;
@@ -53,10 +55,10 @@
   background-color: var(--color-accent-pink);
 }
 
-.cyan{
+.cyan {
   background-color: var(--color-accent-cyan);
 }
 
-.orange{
+.orange {
   background-color: var(--color-accent-orange);
 }
