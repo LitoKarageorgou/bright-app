@@ -9,10 +9,10 @@
 
 .sectionTitle {
   font-family: var(--font-primary);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antiliased;
-  margin: 1.9rem 0 1.4rem;
+  margin: 2rem 0 1.6rem;
   color: var(--color-primary-text);
   text-align: center;
 }

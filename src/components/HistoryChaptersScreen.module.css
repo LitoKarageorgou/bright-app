@@ -30,16 +30,32 @@
   margin: 0.6rem auto;
   font-weight: 600;
   display: flex;
+  flex-direction: row; 
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
   border-radius: var(--radius-main);
-  }
+  transition: all 0.3s ease; /* smooth expand */
+}
 
-.chapterList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.chapterRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.chapterNumber {
+  width: 30px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .chapterItem {
@@ -51,33 +67,50 @@
   font-size: 1rem;
 }
 
-.chapterNumber {
-  width: 30px;
-  height: 28px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var( --font-primary);
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-/* Color circles */
-.blue { background-color: var(--color-accent-blue); }
-.yellow { background-color: var(--color-accent-yellow); }
-.orange { background-color: var(--color-accent-orange); }
-.mint { background-color: var(--color-accent-mint); }
-.pink { background-color: var(--color-accent-pink); }
-.cyan { background-color: var(--color-accent-cyan); }
-.green { background-color: var(--color-accent-green); }
-.purple { background-color: var(--color-accent-purple); }
-.red { background-color: var(--color-accent-red); }
-.orchid { background-color: var(--color-accent-orchid); }
-
-.center{
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
+.expanded {
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.7rem; /* fixes padding */
+}
+
+.expandedContent {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.mascot {
+  width: 75px;
+  height: auto;
+}
+
+.startButton {
+  background-color: var(--color-accent-orange);
+  padding: 0.9rem 1.2rem;
+  border-radius: 20px;
+  font-family: var(--font-secondary);
+  color: var(--color-primary-text);
+  font-weight: 700;
+}
+
+/* Color circles */
+.blue    { background-color: var(--color-accent-blue); }
+.yellow  { background-color: var(--color-accent-yellow); }
+.orange  { background-color: var(--color-accent-orange); }
+.mint    { background-color: var(--color-accent-mint); }
+.pink    { background-color: var(--color-accent-pink); }
+.cyan    { background-color: var(--color-accent-cyan); }
+.green   { background-color: var(--color-accent-green); }
+.purple  { background-color: var(--color-accent-purple); }
+.red     { background-color: var(--color-accent-red); }
+.orchid  { background-color: var(--color-accent-orchid); }
