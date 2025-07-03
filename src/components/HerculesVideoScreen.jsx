@@ -3,6 +3,7 @@ import BottomNav from "../components/BottomNav";
 import styles from "./HerculesVideoScreen.module.css";
 import videoThumbnail from "../assets/video-thumbnail.png";
 import StepIndicator from "../components/StepIndicator";
+import { MdSmartToy } from "react-icons/md";
 
 const HerculesVideoScreen = () => {
   return (
@@ -18,15 +19,19 @@ const HerculesVideoScreen = () => {
         <p className={styles.description}>
           Watch the video to learn about Hercules!
         </p>
-
-        {/* Step Indicator and Button */}
-        <StepIndicator current={0} /> {/* First dot active */}
-        <div className={styles.arrowWrapper}>
-          <button className={styles.arrowButton}>
-            {/* onClick={handleNext} */}
-            <span className={styles.arrow}>&rarr;</span>
-          </button>
-        </div>
+      {/* Step Indicator */}
+      <StepIndicator current={0} /> {/* First dot active */}
+      </div>
+      
+      <div className={styles.arrowWrapper}>
+        <button className={styles.nextButton}>
+          {/* onClick={handleNext} */}
+          <span className={styles.arrow}>Next</span>
+        </button>
+      </div>
+      {/* AI Assistant */}
+      <div className={styles.aiButton}>
+        <MdSmartToy className={styles.aiIcon} />
       </div>
       <BottomNav />
     </div>
