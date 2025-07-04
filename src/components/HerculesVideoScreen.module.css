@@ -8,7 +8,7 @@
 
 .title {
   font-family: var(--font-primary);
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   margin: 1rem 0;
   color: var(--color-primary-text);
 }
@@ -17,17 +17,12 @@
   background: white;
   box-shadow: var(--shadow-main);
   border-radius: var(--radius-main);
-  width: 85%;
+  width: 88%;
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1.4rem;
   text-align: center;
-  padding-bottom: 1.9rem;
-}
-
-.thumbnail {
-  width: 100%;
-  border-radius: var(--radius-main);
+  padding-bottom: 2rem;
 }
 
 .description {
@@ -62,12 +57,12 @@
 
 .aiButton {
   position: fixed;
-  bottom: 5.3rem;
+  bottom: 5.1rem;
   right: 2.2rem;
   background-color: var(--color-accent-mint);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 47px;
+  height: 47px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
@@ -82,14 +77,10 @@
 
 .video {
   width: 100%;
-  border-radius: var(--radius-main);
-}
-
-.thumbnailWrapper {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  cursor: pointer;
+  height: 390px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--radius-main);;
 }
 
 .playOverlay {
@@ -103,9 +94,8 @@
   border-radius: 50%;
   color: var(--color-primary-text);
   font-size: 1.5rem;
-  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none;
 }
