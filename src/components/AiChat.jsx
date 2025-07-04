@@ -4,22 +4,27 @@ import { fetchAIResponse } from "../api/openai";
 import { FiSend } from "react-icons/fi";
 
 const AiChat = ({ onClose, initialPrompt }) => {
-const [messages, setMessages] = useState(() => {
-  return initialPrompt
-    ? [] // let useEffect handle messages if there's a prompt
-    : [{ role: "assistant", content: "Hi! Ask me anything about Hercules!" }];
-});
+  const [messages, setMessages] = useState(() => {
+    return initialPrompt
+      ? [] // let useEffect handle messages if there's a prompt
+      : [{ role: "assistant", content: "Hi! Ask me anything about Hercules!" }];
+  });
   const [input, setInput] = useState("");
 
   useEffect(() => {
     if (initialPrompt) {
       const userMsg = { role: "user", content: initialPrompt };
-      setMessages((prev) => [...prev, userMsg]);
+      const newMessages = [userMsg];
 
       fetchAIResponse(initialPrompt).then((aiReply) => {
         const assistantMsg = { role: "assistant", content: aiReply };
-        setMessages((prev) => [...prev, assistantMsg]);
+        setMessages([...newMessages, assistantMsg]);
       });
+    } else {
+      // Reset to default message if no prompt
+      setMessages([
+        { role: "assistant", content: "Hi! Ask me anything about Hercules!" },
+      ]);
     }
   }, [initialPrompt]);
 
@@ -48,9 +53,7 @@ const [messages, setMessages] = useState(() => {
             <div
               key={index}
               className={
-                msg.role === "assistant"
-                  ? styles.assistantMsg
-                  : styles.userMsg
+                msg.role === "assistant" ? styles.assistantMsg : styles.userMsg
               }
             >
               {msg.content}
