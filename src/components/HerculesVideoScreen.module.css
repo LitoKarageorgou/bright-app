@@ -50,14 +50,6 @@ video:fullscreen {
   object-position: center;
 }
 
-/* Safari / WebKit fallback */
-video:-webkit-full-screen {
-  object-fit: contain;
-  padding: 0 !important;
-  border-radius: 0;
-  background-color: black;
-}
-
 .playOverlay {
   position: absolute;
   top: 50%;
