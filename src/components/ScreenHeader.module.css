@@ -23,7 +23,7 @@
 
 .leftAlign {
   text-align: left;
-  padding-left: 2.6rem;
+  padding-left: 2.3rem;
 }
 
 .largeText {
@@ -31,6 +31,6 @@
 }
 
 .smallText {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
 }
