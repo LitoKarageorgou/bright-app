@@ -7,8 +7,11 @@ import styles from "./HerculesVideoScreen.module.css";
 import { IoIosPlay } from "react-icons/io";
 import herculesVideo from "../assets/hercules-video.mp4";
 import AiChat from "../components/AiChat";
+import HerculesStoryScreen from './HerculesStoryScreen';
+import { useNavigate } from "react-router-dom";
 
 const HerculesVideoScreen = () => {
+  const navigate = useNavigate();
   const [hasPlayed, setHasPlayed] = useState(false);
   const [videoWatched, setVideoWatched] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -99,9 +102,9 @@ const HerculesVideoScreen = () => {
       </div>
 
       <div className={styles.arrowWrapper}>
-        <button className={styles.nextButton}>
-          <span className={styles.arrow}>➜</span>
-        </button>
+       <button className={styles.nextButton} onClick={() => navigate("/courses/history/hercules/story")}>
+  <span className={styles.arrow}>➜</span>
+</button>
       </div>
 
       <AiButton onClick={() => setIsChatOpen(true)} />

@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-
 import WelcomeScreen from './components/WelcomeScreen';
 import LoginScreen from './components/LoginScreen';
 import GradeSelectionScreen from './components/GradeSelectionScreen';
 import CourseSelectionScreen from './components/CourseSelectionScreen';
 import HistoryChaptersScreen from './components/HistoryChaptersScreen';
 import HerculesVideoScreen from './components/HerculesVideoScreen';
+import HerculesStoryScreen from './components/HerculesStoryScreen';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Route path="/courses" element={<CourseSelectionScreen />} />
         <Route path="/courses/history" element={<HistoryChaptersScreen />} />
         <Route path="/courses/history/hercules/video" element={<HerculesVideoScreen />} />
+        <Route path="/courses/history/hercules/story" element={<HerculesStoryScreen />} />
       </Routes>
     </Router>
   );
