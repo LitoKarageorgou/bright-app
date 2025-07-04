@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import ScreenHeader from "../components/ScreenHeader";
 import BottomNav from "../components/BottomNav";
 import StepIndicator from "../components/StepIndicator";
@@ -6,14 +6,17 @@ import { MdSmartToy } from "react-icons/md";
 import styles from "./HerculesVideoScreen.module.css";
 import { IoIosPlay } from "react-icons/io";
 import videoThumbnail from "../assets/video-thumbnail.png";
-import herculesVideo from "../assets/hercules-video.mp4"; // adjust path if needed
+import herculesVideo from "../assets/hercules-video.mp4";
 
 const HerculesVideoScreen = () => {
   const [showVideo, setShowVideo] = useState(false);
+  const [fullscreenExited, setFullscreenExited] = useState(false);
   const videoRef = useRef(null);
 
   const handlePlayClick = () => {
     setShowVideo(true);
+    setFullscreenExited(false);
+
     setTimeout(() => {
       const video = videoRef.current;
       if (!video) return;
@@ -31,6 +34,32 @@ const HerculesVideoScreen = () => {
       });
     }, 100);
   };
+
+  // Detect when fullscreen exits
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      const isFullscreen =
+        document.fullscreenElement ||
+        document.webkitFullscreenElement ||
+        document.msFullscreenElement;
+
+      if (!isFullscreen && showVideo) {
+        setFullscreenExited(true);
+      }
+    };
+
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    document.addEventListener("webkitfullscreenchange", handleFullscreenChange);
+    document.addEventListener("msfullscreenchange", handleFullscreenChange);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+      document.removeEventListener("webkitfullscreenchange", handleFullscreenChange);
+      document.removeEventListener("msfullscreenchange", handleFullscreenChange);
+    };
+  }, [showVideo]);
+
+  const showExtras = fullscreenExited || !showVideo;
 
   return (
     <div className={styles.container}>
@@ -58,20 +87,21 @@ const HerculesVideoScreen = () => {
           />
         )}
 
-        {!showVideo && (
-          <p className={styles.description}>
-            Watch the video to learn about Hercules!
-          </p>
+        {showExtras && (
+          <>
+            <p className={styles.description}>
+              Watch the video to learn about Hercules!
+            </p>
+            <StepIndicator current={0} />
+          </>
         )}
-
-        {!showVideo && <StepIndicator current={0} />}
       </div>
 
-      {!showVideo && (
+      {showExtras && (
         <>
           <div className={styles.arrowWrapper}>
             <button className={styles.nextButton}>
-              <span className={styles.arrow}>Next</span>
+              <span className={styles.arrow}>➜</span>
             </button>
           </div>
           <div className={styles.aiButton}>
