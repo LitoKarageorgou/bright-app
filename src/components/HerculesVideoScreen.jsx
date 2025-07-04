@@ -2,13 +2,15 @@ import { useState, useRef } from "react";
 import ScreenHeader from "../components/ScreenHeader";
 import BottomNav from "../components/BottomNav";
 import StepIndicator from "../components/StepIndicator";
-import { MdSmartToy } from "react-icons/md";
-import { IoIosPlay } from "react-icons/io";
+import AiButton from "../components/AiButton";
 import styles from "./HerculesVideoScreen.module.css";
+import { IoIosPlay } from "react-icons/io";
 import herculesVideo from "../assets/hercules-video.mp4";
+import AiChat from "../components/AiChat";
 
 const HerculesVideoScreen = () => {
   const [hasPlayed, setHasPlayed] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
   const videoRef = useRef(null);
 
   const handlePlayClick = () => {
@@ -33,10 +35,8 @@ const HerculesVideoScreen = () => {
 
   return (
     <div className={styles.container}>
-      <ScreenHeader title="History" align="left" size="small" />
-      <h2 className={styles.title}>Hercules</h2>
-
-      <div className={styles.card}>
+      <ScreenHeader title="Hercules" />
+            <div className={styles.card}>
         <div className={styles.videoWrapper}>
           <video
             ref={videoRef}
@@ -63,9 +63,8 @@ const HerculesVideoScreen = () => {
         </button>
       </div>
 
-      <div className={styles.aiButton}>
-        <MdSmartToy className={styles.aiIcon} />
-      </div>
+      <AiButton onClick={() => setIsChatOpen(true)} />
+      {isChatOpen && <AiChat onClose={() => setIsChatOpen(false)} />}
 
       <BottomNav />
     </div>

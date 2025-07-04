@@ -34,7 +34,7 @@
   justify-content: flex-start;
   gap: 1rem;
   border-radius: var(--radius-main);
-  /* transition: all 0.3s ease;  smooth expand */
+  transition: all 0.3s ease; 
 }
 
 .courseButton:last-of-type {

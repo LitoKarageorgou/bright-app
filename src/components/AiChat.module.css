@@ -1,0 +1,94 @@
+.chatOverlay {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.chatBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  background-color: var(--color-accent-mint);
+  color: var(--color-primary-text);
+  font-weight: bold;
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+}
+
+.chatHeader button {
+  background: none;
+  color: var(--color-primary-text);
+  font-size: 1.45rem;
+  font-weight: 900;
+}
+
+.messages {
+  flex: 1;
+  padding: 0.8rem;
+  overflow-y: auto;
+  font-family: var(--font-secondary);
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.userMsg {
+  align-self: flex-end;
+  background: var(--color-accent-blue);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  max-width: 80%;
+}
+
+.assistantMsg {
+  align-self: flex-start;
+  background: #f0f0f0;
+  color: var(--color-primary-text);
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  max-width: 80%;
+}
+
+.inputRow {
+  display: flex;
+  padding: 0.6rem;
+  gap: 0.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.inputRow input {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+}
+
+.inputRow button {
+  background-color: var(--color-accent-mint);
+  color: var(--color-primary-text);
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
