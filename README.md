@@ -1,12 +1,59 @@
-# React + Vite
+🧠 Bright – Learning Reimagined for Neurodiverse Students
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bright is a prototype web app that transforms school material into short, interactive micro-lessons designed to support learners with ADHD and short attention spans. It uses multimodal presentation (video, text, quiz), gamified feedback, and a distraction-minimizing UI to enhance engagement and retention.
 
-Currently, two official plugins are available:
+📌 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎬 AI-generated animated video lessons
 
-## Expanding the ESLint configuration
+📖 Sentence-by-sentence read-aloud story mode
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧠 Interactive quiz with instant XP feedback
+
+🤖 Built-in AI tutor for on-demand clarification and games
+
+🌈 Clean, focus-optimized interface
+
+🏆 Gamified XP system for motivation
+
+🇬🇷 Based on Greek Ministry of Education content (translated)
+
+🚧 Current Status
+
+This is a prototype featuring one chapter from one subject of the third grade of elementary school.
+
+Future plans include expanding to cover the full curriculum across grades and subjects.
+
+🛠️ Tech Stack
+
+React.js
+
+CSS Modules
+
+OpenAI API (AI tutor)
+
+HTML5 Video
+
+Custom state handling (no external state lib)
+
+🚀 Getting Started
+
+To run locally:
+npm install
+npm start
+
+📁 Structure
+
+components/ → Reusable UI components (AiChat, Modal, etc.)
+
+screens/ → Main screens: Video, Story, Quiz, Celebration
+
+assets/ → Images, audio, and videos
+
+API/ → AI assistant integration logic
+
+🙋 About the Creator
+
+Developed by Lito Karageorgou, a psychologist and developer passionate about accessibility in education. Originally conceptualised in the OpenHackathon 2025 along with two other teammates, Bright was later redesigned and rebuilt from scratch as a solo project.
+
+
