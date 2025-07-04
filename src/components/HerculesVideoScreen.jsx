@@ -7,7 +7,6 @@ import styles from "./HerculesVideoScreen.module.css";
 import { IoIosPlay } from "react-icons/io";
 import herculesVideo from "../assets/hercules-video.mp4";
 import AiChat from "../components/AiChat";
-import HerculesStoryScreen from './HerculesStoryScreen';
 import { useNavigate } from "react-router-dom";
 
 const HerculesVideoScreen = () => {

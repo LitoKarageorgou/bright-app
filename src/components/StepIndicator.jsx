@@ -6,7 +6,7 @@ const StepIndicator = ({ current, total = 3 }) => {
       {Array.from({ length: total }, (_, i) => (
         <div
           key={i}
-          className={`${styles.dot} ${i === current ? styles.active : ""}`}
+          className={`${styles.dot} ${i <= current ? styles.active : ""}`}
         ></div>
       ))}
     </div>

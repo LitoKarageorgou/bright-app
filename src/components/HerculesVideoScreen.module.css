@@ -11,13 +11,13 @@
   box-shadow: var(--shadow-main);
   border-radius: var(--radius-main);
   width: 87%;
-  min-height: 480px;
+  min-height: 492px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   text-align: center;
   padding: 0.7rem;
-  padding-bottom: 2.75rem;
+  position: relative;
 }
 
 .description {

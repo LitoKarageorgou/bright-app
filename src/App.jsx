@@ -7,6 +7,7 @@ import CourseSelectionScreen from './components/CourseSelectionScreen';
 import HistoryChaptersScreen from './components/HistoryChaptersScreen';
 import HerculesVideoScreen from './components/HerculesVideoScreen';
 import HerculesStoryScreen from './components/HerculesStoryScreen';
+import HerculesQuizScreen from './components/HerculesQuizScreen';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/courses/history" element={<HistoryChaptersScreen />} />
         <Route path="/courses/history/hercules/video" element={<HerculesVideoScreen />} />
         <Route path="/courses/history/hercules/story" element={<HerculesStoryScreen />} />
+        <Route path="/courses/history/hercules/quiz" element={<HerculesQuizScreen />} />
       </Routes>
     </Router>
   );

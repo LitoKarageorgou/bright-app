@@ -219,7 +219,7 @@ const HerculesStoryScreen = () => {
         </button>
         <button
           className={styles.arrowButton}
-          onClick={() => navigate("/quiz")}
+          onClick={() => navigate("/courses/history/hercules/quiz")}
         >
           <span className={styles.arrow}>➜</span>
         </button>
