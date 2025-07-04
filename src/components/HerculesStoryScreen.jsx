@@ -15,13 +15,13 @@ import {
 
 /* ─────────────────────────  STORY TEXTS  ───────────────────────── */
 
-const summaryText = `Long ago, in a time when gods and mortals crossed paths, Heracles was born—the son of Zeus, king of the gods, and a mortal woman named Alcmene. Even as a baby, Heracles showed signs of his divine strength: when Hera, jealous and vengeful, sent two snakes to his cradle, he strangled them with his bare hands.
+const summaryText = `Long ago, in a time when gods and mortals crossed paths, Hercules was born—the son of Zeus, king of the gods, and a mortal woman named Alcmene. Even as a baby, Hercules showed signs of his divine strength: when Hera, jealous and vengeful, sent two snakes to his cradle, he strangled them with his bare hands.
 
-He grew up strong, brave, and kind-hearted. But Hera never stopped tormenting him. One day, driven mad by her rage, Heracles did something terrible—he harmed his own family without realizing it. Full of grief, he went to the Oracle of Delphi to seek redemption. The Oracle told him he must serve King Eurystheus for twelve years and complete twelve nearly impossible labors. Only then would he find peace.
+He grew up strong, brave, and kind-hearted. But Hera never stopped tormenting him. One day, driven mad by her rage, Hercules did something terrible—he harmed his own family without realizing it. Full of grief, he went to the Oracle of Delphi to seek redemption. The Oracle told him he must serve King Eurystheus for twelve years and complete twelve nearly impossible labors. Only then would he find peace.
 
 And so began his legendary trials:
 
-He faced the Nemean Lion, whose skin no weapon could pierce. Heracles strangled it and wore its pelt as armor.
+He faced the Nemean Lion, whose skin no weapon could pierce. Hercules strangled it and wore its pelt as armor.
 
 He slayed the Lernaean Hydra, a serpent with many heads that grew back double when cut. With help from his nephew Iolaus, he burned each stump to stop them from regrowing.
 
@@ -45,39 +45,39 @@ He fetched the golden apples of the Hesperides, guarded by a serpent and retriev
 
 Finally, he descended into the Underworld and brought back Cerberus, the three-headed guard dog of Hades.
 
-After the labors, Heracles continued to journey far and wide. He rescued kings, defeated monsters, and even challenged Death itself to save a friend’s wife. But his story ended in tragedy. Tricked into wearing a poisoned robe, he suffered unbearable pain. Choosing to end it on his own terms, he built a funeral pyre and lay atop it. As the flames rose, a thundercloud descended—Zeus lifted him to Olympus.
+After the labors, Hercules continued to journey far and wide. He rescued kings, defeated monsters, and even challenged Death itself to save a friend’s wife. But his story ended in tragedy. Tricked into wearing a poisoned robe, he suffered unbearable pain. Choosing to end it on his own terms, he built a funeral pyre and lay atop it. As the flames rose, a thundercloud descended—Zeus lifted him to Olympus.
 
-There, Heracles found peace at last. He married Hebe, the goddess of youth, and was welcomed among the gods as one of their own.`;
+There, Hercules found peace at last. He married Hebe, the goddess of youth, and was welcomed among the gods as one of their own.`;
 
-const fullChapterText = `Heracles was born from the imagination of ancient people during a time when they lived in fear of wild animals, storms, and earthquakes. They needed heroes to help them overcome life's hardships. Heracles, the son of Zeus and a mortal princess Alcmene, was the greatest hero of Greek mythology. He was the strongest of men, slaying beasts and tyrants, and always helping people with courage and justice.
+const fullChapterText = `Hercules was born from the imagination of ancient people during a time when they lived in fear of wild animals, storms, and earthquakes. They needed heroes to help them overcome life's hardships. Hercules, the son of Zeus and a mortal princess Alcmene, was the greatest hero of Greek mythology. He was the strongest of men, slaying beasts and tyrants, and always helping people with courage and justice.
 
-Alcmene gave birth to two sons in Thebes: Heracles, son of Zeus, and Iphicles. Hera, jealous of Alcmene, hated Heracles. Zeus sent Hermes to bring the infant to Olympus to drink Hera's milk while she slept, making him invincible. When Hera woke and realized it, she pushed him away, spilling milk into the sky, creating the Milky Way. When the babies were eight months old, Hera sent two snakes to kill them. Heracles strangled them with his bare hands, proving his divine nature.
+Alcmene gave birth to two sons in Thebes: Hercules, son of Zeus, and Iphicles. Hera, jealous of Alcmene, hated Hercules. Zeus sent Hermes to bring the infant to Olympus to drink Hera's milk while she slept, making him invincible. When Hera woke and realized it, she pushed him away, spilling milk into the sky, creating the Milky Way. When the babies were eight months old, Hera sent two snakes to kill them. Hercules strangled them with his bare hands, proving his divine nature.
 
-Heracles later married Megara, daughter of the king of Thebes. But Hera made him lose his mind, and he harmed his own family. After regaining his senses, he went to the oracle at Delphi for guidance. The Pythia told him to serve his cousin Eurystheus in Mycenae for twelve years. If he succeeded, he would become immortal.
+Hercules later married Megara, daughter of the king of Thebes. But Hera made him lose his mind, and he harmed his own family. After regaining his senses, he went to the oracle at Delphi for guidance. The Pythia told him to serve his cousin Eurystheus in Mycenae for twelve years. If he succeeded, he would become immortal.
 
-Heracles’ first labor was to slay the Nemean Lion, whose skin was impervious to weapons. He crafted a club from a wild olive tree and strangled the lion with his hands. He wore its skin as armor. Eurystheus was so terrified he hid in a bronze jar.
+Hercules’ first labor was to slay the Nemean Lion, whose skin was impervious to weapons. He crafted a club from a wild olive tree and strangled the lion with his hands. He wore its skin as armor. Eurystheus was so terrified he hid in a bronze jar.
 
-Next came the Lernaean Hydra, a multi-headed serpent. With help from his nephew Iolaus, Heracles burned each stump after cutting off a head to prevent it from growing back. He buried the immortal head under a rock and dipped his arrows in the Hydra’s venom.
+Next came the Lernaean Hydra, a multi-headed serpent. With help from his nephew Iolaus, Hercules burned each stump after cutting off a head to prevent it from growing back. He buried the immortal head under a rock and dipped his arrows in the Hydra’s venom.
 
-For another labor, Heracles captured the Erymanthian Boar alive and brought it back to Mycenae, frightening Eurystheus again. He also chased the golden-horned deer of Artemis for a year, finally wounding and capturing it gently.
+For another labor, Hercules captured the Erymanthian Boar alive and brought it back to Mycenae, frightening Eurystheus again. He also chased the golden-horned deer of Artemis for a year, finally wounding and capturing it gently.
 
-At Lake Stymphalia, he drove out man-eating birds using bronze castanets from Athena, then shot many with his arrows. For the Augean Stables, filled with filth, Heracles redirected two rivers through them, cleaning them in a single day.
+At Lake Stymphalia, he drove out man-eating birds using bronze castanets from Athena, then shot many with his arrows. For the Augean Stables, filled with filth, Hercules redirected two rivers through them, cleaning them in a single day.
 
-Angered by Augeas’ refusal to pay him, Heracles defeated and killed him, founding the Olympic Games in honor of Zeus. Athletes from across Greece participated, and wars paused during the games.
+Angered by Augeas’ refusal to pay him, Hercules defeated and killed him, founding the Olympic Games in honor of Zeus. Athletes from across Greece participated, and wars paused during the games.
 
-Heracles also captured the Cretan Bull, subdued the man-eating horses of Diomedes, and obtained the belt of the Amazon queen Hippolyta. He journeyed far west to retrieve Geryon's cattle, killing the two-headed guard dog Orthrus and Geryon himself. To reach Geryon's land, he borrowed the Sun's golden cup.
+Hercules also captured the Cretan Bull, subdued the man-eating horses of Diomedes, and obtained the belt of the Amazon queen Hippolyta. He journeyed far west to retrieve Geryon's cattle, killing the two-headed guard dog Orthrus and Geryon himself. To reach Geryon's land, he borrowed the Sun's golden cup.
 
-In another story, Heracles saved Alcestis, wife of his friend Admetus, from death by wrestling with Charon at the entrance to Hades.
+In another story, Hercules saved Alcestis, wife of his friend Admetus, from death by wrestling with Charon at the entrance to Hades.
 
-For a labor, Heracles descended to the Underworld and brought back Cerberus, the three-headed guard dog. Later, he sought the golden apples of the Hesperides. Prometheus, whom Heracles freed, advised him to ask Atlas for help. While Atlas fetched the apples, Heracles held up the sky, then tricked Atlas into taking it back.
+For a labor, Hercules descended to the Underworld and brought back Cerberus, the three-headed guard dog. Later, he sought the golden apples of the Hesperides. Prometheus, whom Hercules freed, advised him to ask Atlas for help. While Atlas fetched the apples, Hercules held up the sky, then tricked Atlas into taking it back.
 
-In Egypt, Heracles escaped human sacrifice by killing the tyrant Busiris.
+In Egypt, Hercules escaped human sacrifice by killing the tyrant Busiris.
 
-After completing all his labors, Heracles married Deianira. When the centaur Nessus tried to abduct her, Heracles shot him with a poisoned arrow. Before dying, Nessus told Deianira that his blood would ensure Heracles’ love forever. Later, she gave Heracles a poisoned tunic soaked in Nessus’ blood. Upon wearing it, Heracles was consumed by pain. He climbed Mount Oeta, built a pyre, and laid on it. Only Philoctetes agreed to light the fire, and Heracles gifted him his poisoned arrows.
+After completing all his labors, Hercules married Deianira. When the centaur Nessus tried to abduct her, Hercules shot him with a poisoned arrow. Before dying, Nessus told Deianira that his blood would ensure Hercules’ love forever. Later, she gave Hercules a poisoned tunic soaked in Nessus’ blood. Upon wearing it, Hercules was consumed by pain. He climbed Mount Oeta, built a pyre, and laid on it. Only Philoctetes agreed to light the fire, and Hercules gifted him his poisoned arrows.
 
-A thunderstorm carried Heracles to Olympus. There, reconciled with Hera, he married Hebe, daughter of Zeus and Hera, and became a god, forever young.
+A thunderstorm carried Hercules to Olympus. There, reconciled with Hera, he married Hebe, daughter of Zeus and Hera, and became a god, forever young.
 
-Heracles' name means "glory through Hera's hate." Loved for his heroic deeds, he was worshipped across the Mediterranean. Many cities were named after him, and coins bore his image—even Alexander the Great claimed descent from him. His life inspired plays, art, and films, keeping his legend alive to this day.`;
+Hercules' name means "glory through Hera's hate." Loved for his heroic deeds, he was worshipped across the Mediterranean. Many cities were named after him, and coins bore his image—even Alexander the Great claimed descent from him. His life inspired plays, art, and films, keeping his legend alive to this day.`;
 
 /* ─────────────────────────  COMPONENT  ───────────────────────── */
 
@@ -89,63 +89,75 @@ const HerculesStoryScreen = () => {
 
   const navigate = useNavigate();
 
-  /* --- refs keep latest mutable values inside callbacks --- */
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const isPlayingRef = useRef(isPlaying);
   const indexRef = useRef(currentSentenceIndex);
+  const utterRef = useRef(null);
 
-  useEffect(() => { isPlayingRef.current = isPlaying; }, [isPlaying]);
-  useEffect(() => { indexRef.current = currentSentenceIndex; }, [
-    currentSentenceIndex,
-  ]);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
 
-  /* --- split active text into sentences --- */
+  useEffect(() => {
+    indexRef.current = currentSentenceIndex;
+  }, [currentSentenceIndex]);
+
   const sentences = (
     activeTab === "summary" ? summaryText : fullChapterText
   ).split(/(?<=[.?!])\s+/);
 
-  /* --- speak one sentence, then queue the next on 'end' --- */
-  const speakSentence = (i) => {
-    if (i >= sentences.length) {
+  const speakFrom = (startIndex) => {
+    if (startIndex >= sentences.length) {
       setIsPlaying(false);
       return;
     }
 
-    const utter = new SpeechSynthesisUtterance(sentences[i]);
+    const utter = new SpeechSynthesisUtterance(sentences[startIndex]);
     utter.lang = "en-US";
 
     utter.onend = () => {
       if (!isPlayingRef.current) return;
-
-      const next = i + 1;
+      const next = startIndex + 1;
       setCurrentSentenceIndex(next);
-
-      /*  VoiceOver/Safari needs a micro-break before speaking again  */
-      setTimeout(() => speakSentence(next), 50);
-      /*   requestAnimationFrame(() => speakSentence(next));  // also works  */
+      speakFrom(next);
     };
 
+    utterRef.current = utter;
     window.speechSynthesis.speak(utter);
   };
 
-  /* --- start / stop when isPlaying changes --- */
-  useEffect(() => {
-    window.speechSynthesis.cancel();
-    if (isPlaying) speakSentence(currentSentenceIndex);
-    return () => window.speechSynthesis.cancel();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isPlaying]);
-
-  /* ────────────────  UI handlers  ──────────────── */
+  const handleTogglePlay = () => {
+    setIsPlaying((prev) => {
+      if (!prev) {
+        window.speechSynthesis.cancel();
+        speakFrom(currentSentenceIndex);
+      } else {
+        window.speechSynthesis.cancel();
+      }
+      return !prev;
+    });
+  };
 
   const handleRestart = () => {
+    window.speechSynthesis.cancel();
     setCurrentSentenceIndex(0);
     setIsPlaying(true);
+    speakFrom(0);
   };
-  const handleTogglePlay = () => setIsPlaying((p) => !p);
+
   const handleRepeat = () => {
+    window.speechSynthesis.cancel();
     setIsPlaying(false);
-    setTimeout(() => setIsPlaying(true), 100);
+    setTimeout(() => {
+      setIsPlaying(true);
+      speakFrom(currentSentenceIndex);
+    }, 100);
   };
+
   const switchTab = (tab) => {
     window.speechSynthesis.cancel();
     setIsPlaying(false);
@@ -153,15 +165,12 @@ const HerculesStoryScreen = () => {
     setCurrentSentenceIndex(0);
   };
 
-  /* ─────────────────────────  RENDER  ───────────────────────── */
-
   return (
     <div className={styles.container}>
       <ScreenHeader title="Hercules" />
       <p className={styles.description}>Listen & read the story of Hercules!</p>
 
       <div className={styles.card}>
-        {/*  Tabs  */}
         <div className={styles.tabHeader}>
           <button
             className={activeTab === "summary" ? styles.activeTab : styles.tab}
@@ -177,7 +186,6 @@ const HerculesStoryScreen = () => {
           </button>
         </div>
 
-        {/*  Story box  */}
         <div className={styles.storyBox}>
           <p
             className={styles.storyText}
@@ -209,7 +217,6 @@ const HerculesStoryScreen = () => {
         <StepIndicator current={1} />
       </div>
 
-      {/*  Arrows to next screens  */}
       <div className={styles.arrowWrapper}>
         <button
           className={styles.arrowButton}
@@ -225,7 +232,6 @@ const HerculesStoryScreen = () => {
         </button>
       </div>
 
-      {/*  AI chat & nav  */}
       <AiButton onClick={() => setIsChatOpen(true)} />
       {isChatOpen && <AiChat onClose={() => setIsChatOpen(false)} />}
 

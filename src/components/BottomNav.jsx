@@ -7,7 +7,7 @@ const BottomNav = () => {
 
   return (
     <nav className={styles.nav}>
-      <button onClick={() => navigate("/learn")} className={styles.iconButton}>
+      <button onClick={() => navigate("/courses")} className={styles.iconButton}>
         <MdSchool className={styles.icon} />
       </button>
       <button onClick={() => navigate("/search")} className={styles.iconButton}>

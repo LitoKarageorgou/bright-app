@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ScreenHeader from "../components/ScreenHeader";
 import BottomNav from "../components/BottomNav";
 import StepIndicator from "../components/StepIndicator";
@@ -9,6 +9,10 @@ import { useNavigate } from "react-router-dom";
 
 const HerculesQuizScreen = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [selected, setSelected] = useState(null);
   const [showFeedback, setShowFeedback] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -64,7 +68,10 @@ const HerculesQuizScreen = () => {
       </div>
 
       <div className={styles.arrowWrapper}>
-        <button className={styles.arrowButton + " " + styles.rightArrowButton} onClick={handleFinish}>
+        <button
+          className={styles.arrowButton + " " + styles.rightArrowButton}
+          onClick={handleFinish}
+        >
           <span className={styles.arrow}>End</span>
         </button>
       </div>

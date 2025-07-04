@@ -18,6 +18,10 @@ const HerculesVideoScreen = () => {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const videoRef = useRef(null);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handlePlayClick = () => {
     const video = videoRef.current;
     if (!video) return;
@@ -92,18 +96,19 @@ const HerculesVideoScreen = () => {
         </div>
 
         {videoWatched && isPaused && !isFullscreen && (
-          <div className={styles.xpNotice}>
-            🎉 +40 XP!
-          </div>
+          <div className={styles.xpNotice}>🎉 +40 XP!</div>
         )}
 
         <StepIndicator current={0} />
       </div>
 
       <div className={styles.arrowWrapper}>
-       <button className={styles.nextButton} onClick={() => navigate("/courses/history/hercules/story")}>
-  <span className={styles.arrow}>➜</span>
-</button>
+        <button
+          className={styles.nextButton}
+          onClick={() => navigate("/courses/history/hercules/story")}
+        >
+          <span className={styles.arrow}>➜</span>
+        </button>
       </div>
 
       <AiButton onClick={() => setIsChatOpen(true)} />

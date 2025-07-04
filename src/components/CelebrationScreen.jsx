@@ -4,12 +4,16 @@ import styles from "./CelebrationScreen.module.css";
 import sheepCelebration from "../assets/sheep-celebrating.png";
 import { useNavigate } from "react-router-dom";
 import AiChat from "../components/AiChat";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const CelebrationScreen = () => {
   const navigate = useNavigate();
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [initialPrompt, setInitialPrompt] = useState(null);
+
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={styles.container}>
