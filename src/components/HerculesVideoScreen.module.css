@@ -15,7 +15,8 @@
   flex-direction: column;
   gap: 2rem;
   text-align: center;
-  padding: 1rem 1rem 2.5rem 1rem;
+  padding: 0.7rem;
+  padding-bottom: 2.75rem;
 }
 
 .description {
@@ -41,6 +42,20 @@
   border-radius: var(--radius-main);
   display: block;          
   border-radius: inherit;
+}
+
+/* Fullscreen fix */
+video:fullscreen {
+ object-fit: cover;
+  object-position: center;
+}
+
+/* Safari / WebKit fallback */
+video:-webkit-full-screen {
+  object-fit: contain;
+  padding: 0 !important;
+  border-radius: 0;
+  background-color: black;
 }
 
 .playOverlay {

@@ -1,7 +1,7 @@
 .aiButton {
   position: fixed;
-  bottom: 5.8rem;
-  right: 2.3rem;
+  bottom: 5.85rem;
+  right: 2.2rem;
   background-color: var(--color-accent-mint);
   border-radius: 50%;
   width: 45px;
