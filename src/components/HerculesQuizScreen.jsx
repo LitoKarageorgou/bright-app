@@ -23,7 +23,7 @@ const HerculesQuizScreen = () => {
   };
 
   const handleFinish = () => {
-    navigate("/courses/history/hercules/done");
+    navigate("/courses/history/hercules/celebration");
   };
 
   return (
