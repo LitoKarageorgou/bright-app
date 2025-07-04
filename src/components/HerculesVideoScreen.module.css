@@ -8,7 +8,7 @@
 
 .title {
   font-family: var(--font-primary);
-  font-size: 1.4rem;
+  font-size: 1.38rem;
   margin: 1rem 0;
   color: var(--color-primary-text);
 }
@@ -33,11 +33,12 @@
   padding: 0 1.9rem;
 }
 
+/* Next Button */
 .nextButton {
   font-family: var(--font-primary);
   background-color: #ededed;
   border-radius: 10px;
-  padding: 0.6rem 0.9rem;
+  padding: 0.7rem 0.95rem;
   margin-top: 1.2rem;
   /* box-shadow: var(--shadow-main); */
 }
@@ -55,6 +56,7 @@
   justify-content: center;
 }
 
+/* AI Button */
 .aiButton {
   position: fixed;
   bottom: 5.1rem;
@@ -75,12 +77,17 @@
   font-size: 1.4rem;
 }
 
+/* Video */
 .video {
   width: 100%;
   height: 390px;
   object-fit: cover;
   object-position: top;
   border-radius: var(--radius-main);;
+}
+
+.videoWrapper {
+  position: relative;
 }
 
 .playOverlay {
@@ -98,4 +105,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1;
+  padding: 0;
+}
+
+.playOverlay svg {
+  transform: translatex(2px); /* try 1px or 2px if needed */
 }
