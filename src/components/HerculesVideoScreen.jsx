@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import ScreenHeader from "../components/ScreenHeader";
 import BottomNav from "../components/BottomNav";
 import StepIndicator from "../components/StepIndicator";
@@ -10,14 +10,18 @@ import AiChat from "../components/AiChat";
 
 const HerculesVideoScreen = () => {
   const [hasPlayed, setHasPlayed] = useState(false);
+  const [videoWatched, setVideoWatched] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const videoRef = useRef(null);
 
   const handlePlayClick = () => {
     const video = videoRef.current;
     if (!video) return;
 
-    video.play()
+    video
+      .play()
       .then(() => {
         setHasPlayed(true);
         if (video.requestFullscreen) {
@@ -33,10 +37,44 @@ const HerculesVideoScreen = () => {
       });
   };
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleProgress = () => {
+      const current = video.currentTime;
+      const total = video.duration;
+
+      if (total && current / total >= 0.1 && !videoWatched) {
+        setVideoWatched(true);
+        console.log("🎉 85% watched — award XP now");
+      }
+    };
+
+    const handlePause = () => setIsPaused(true);
+    const handlePlay = () => setIsPaused(false);
+    const handleFullscreenChange = () =>
+      setIsFullscreen(!!document.fullscreenElement);
+
+    video.addEventListener("timeupdate", handleProgress);
+    video.addEventListener("pause", handlePause);
+    video.addEventListener("play", handlePlay);
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+
+    return () => {
+      video.removeEventListener("timeupdate", handleProgress);
+      video.removeEventListener("pause", handlePause);
+      video.removeEventListener("play", handlePlay);
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    };
+  }, [videoWatched]);
+
   return (
     <div className={styles.container}>
       <ScreenHeader title="Hercules" />
-            <div className={styles.card}>
+      <p className={styles.description}>Watch & learn about Hercules!</p>
+
+      <div className={styles.card}>
         <div className={styles.videoWrapper}>
           <video
             ref={videoRef}
@@ -51,9 +89,12 @@ const HerculesVideoScreen = () => {
           )}
         </div>
 
-        <p className={styles.description}>
-          Watch the video to learn about Hercules!
-        </p>
+        {videoWatched && isPaused && !isFullscreen && (
+          <div className={styles.xpNotice}>
+            🎉 +40 XP!
+          </div>
+        )}
+
         <StepIndicator current={0} />
       </div>
 
