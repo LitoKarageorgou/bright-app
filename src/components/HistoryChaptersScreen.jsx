@@ -79,7 +79,7 @@ const HistoryChaptersScreen = () => {
 
       <div
         className={`${styles.courseButton} ${styles.center}`}
-        onClick={() => handleClick("intro")}
+        onClick={() => handleClick(998)}
       >
         <span>Introduction</span>
       </div>
@@ -123,7 +123,7 @@ const HistoryChaptersScreen = () => {
 
       <div
         className={`${styles.courseButton} ${styles.center}`}
-        onClick={() => handleClick("glossary")}
+        onClick={() => handleClick(999)}
       >
         <span>Glossary</span>
       </div>
