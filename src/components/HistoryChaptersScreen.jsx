@@ -92,6 +92,7 @@ const HistoryChaptersScreen = () => {
             return (
               <div
                 key={number}
+                id={`chapter-${number}`}
                 className={`${styles.courseButton} ${
                   isExpanded ? styles.expanded : ""
                 }`}
@@ -109,7 +110,9 @@ const HistoryChaptersScreen = () => {
                     <img src={sheep} alt="Mascot" className={styles.mascot} />
                     <button
                       className={styles.startButton}
-                      onClick={() => navigate("/courses/history/hercules/video")}
+                      onClick={() =>
+                        navigate("/courses/history/hercules/video")
+                      }
                     >
                       Start for 120 XP
                     </button>
@@ -137,6 +140,7 @@ const HistoryChaptersScreen = () => {
         onAction={() => {
           setIsModalOpen(false);
           setExpandedChapter(2);
+          window.scrollTo({ top: 0, behavior: "smooth" });
         }}
         primaryButtonClass={styles.orange}
       />
