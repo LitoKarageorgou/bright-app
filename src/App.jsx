@@ -1,28 +1,28 @@
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import WelcomeScreen from './components/WelcomeScreen';
-import LoginScreen from './components/LoginScreen';
-import GradeSelectionScreen from './components/GradeSelectionScreen';
-import CourseSelectionScreen from './components/CourseSelectionScreen';
-import ChaptersScreen from './components/ChaptersScreen';
-import VideoScreen from './components/VideoScreen';
-import StoryScreen from './components/StoryScreen';
-import QuizScreen from './components/QuizScreen';
-import CelebrationScreen from './components/CelebrationScreen';
+import Welcome from './components/screens/Welcome';
+import Login from './components/screens/Login';
+import GradeSelection from './components/screens/GradeSelection';
+import CourseSelection from './components/screens/CourseSelection';
+import Chapters from './components/screens/Chapters';
+import Video from './components/screens/Video';
+import Story from './components/screens/Story';
+import Quiz from './components/screens/Quiz';
+import Celebration from './components/screens/Celebration';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LoaderRedirect />} />
-        <Route path="/login" element={<LoginScreen />} />
-        <Route path="/grades" element={<GradeSelectionScreen />} />
-        <Route path="/courses" element={<CourseSelectionScreen />} />
-        <Route path="/courses/history" element={<ChaptersScreen />} />
-        <Route path="/courses/history/hercules/video" element={<VideoScreen />} />
-        <Route path="/courses/history/hercules/story" element={<StoryScreen />} />
-        <Route path="/courses/history/hercules/quiz" element={<QuizScreen />} />
-        <Route path="/courses/history/hercules/celebration" element={<CelebrationScreen />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/grades" element={<GradeSelection />} />
+        <Route path="/courses" element={<CourseSelection />} />
+        <Route path="/courses/history" element={<Chapters />} />
+        <Route path="/courses/history/hercules/video" element={<Video />} />
+        <Route path="/courses/history/hercules/story" element={<Story />} />
+        <Route path="/courses/history/hercules/quiz" element={<Quiz />} />
+        <Route path="/courses/history/hercules/celebration" element={<Celebration />} />
       </Routes>
     </Router>
   );
@@ -39,7 +39,7 @@ function LoaderRedirect() {
     return () => clearTimeout(timer);
   }, [navigate]);
 
-  return <WelcomeScreen />;
+  return <Welcome />;
 }
 
 export default App;

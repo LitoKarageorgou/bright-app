@@ -11,12 +11,12 @@ import {
   MdLibraryBooks,
   MdFavorite,
 } from "react-icons/md";
-import ScreenHeader from "../components/ScreenHeader";
-import Modal from "../components/Modal";
-import BottomNav from "../components/BottomNav";
-import styles from "./CourseSelectionScreen.module.css";
+import ScreenHeader from "../common/ScreenHeader";
+import Modal from "../common/Modal";
+import BottomNav from "../common/BottomNav";
+import styles from "./CourseSelection.module.css";
 
-const CourseSelectionScreen = () => {
+const CourseSelection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -116,4 +116,4 @@ const CourseSelectionScreen = () => {
   );
 };
 
-export default CourseSelectionScreen;
+export default CourseSelection;

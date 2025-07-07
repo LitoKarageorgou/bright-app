@@ -1,12 +1,12 @@
-import ScreenHeader from "../components/ScreenHeader";
-import BottomNav from "../components/BottomNav";
-import styles from "./CelebrationScreen.module.css";
-import sheepCelebration from "../assets/sheep-celebrating.png";
+import ScreenHeader from "../common/ScreenHeader";
+import BottomNav from "../common/BottomNav";
+import styles from "./Celebration.module.css";
+import sheepCelebration from "../../assets/sheep-celebrating.png";
 import { useNavigate } from "react-router-dom";
-import AiChat from "../components/AiChat";
+import AiChat from "../common/AiChat";
 import { useState, useEffect } from "react";
 
-const CelebrationScreen = () => {
+const Celebration = () => {
   const navigate = useNavigate();
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [initialPrompt, setInitialPrompt] = useState(null);
@@ -65,4 +65,4 @@ const CelebrationScreen = () => {
   );
 };
 
-export default CelebrationScreen;
+export default Celebration;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./AiChat.module.css";
-import { fetchAIResponse } from "../api/openai";
+import { fetchAIResponse } from "../../api/openai";
 import { FiSend } from "react-icons/fi";
 
 const AiChat = ({ onClose, initialPrompt }) => {

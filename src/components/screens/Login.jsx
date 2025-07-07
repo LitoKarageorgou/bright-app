@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./LoginScreen.module.css";
-import sheep from "../assets/sheep-right.png";
+import styles from "./Login.module.css";
+import sheep from "../../assets/sheep-right.png";
 
 function LoginScreen() {
   const [email, setEmail] = useState("");

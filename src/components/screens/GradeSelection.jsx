@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import styles from "./GradeSelectionScreen.module.css";
-import ScreenHeader from "../components/ScreenHeader";
-import Card from "./Card";
-import Modal from "../components/Modal";
-import BottomNav from "./BottomNav";
+import styles from "./GradeSelection.module.css";
+import ScreenHeader from "../common/ScreenHeader";
+import Card from "../common/Card";
+import Modal from "../common/Modal";
+import BottomNav from "../common/BottomNav";
 
 const GradeSelectionScreen = () => {
   useEffect(() => {

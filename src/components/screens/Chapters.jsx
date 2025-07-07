@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import ScreenHeader from "./ScreenHeader";
-import BottomNav from "./BottomNav";
-import Modal from "./Modal";
-import styles from "./ChaptersScreen.module.css";
-import sheep from "../assets/sheep-right.png";
+import ScreenHeader from "../common/ScreenHeader";
+import BottomNav from "../common/BottomNav";
+import Modal from "../common/Modal";
+import styles from "./Chapters.module.css";
+import sheep from "../../assets/sheep-right.png";
 
-const chapters = [
+const chaptersData = [
   {
     number: 1,
     title: "The Creation of the World",
@@ -66,7 +66,7 @@ const ChaptersScreen = () => {
     }
   };
 
-  const grouped = chapters.reduce((acc, ch) => {
+  const grouped = chaptersData.reduce((acc, ch) => {
     acc[ch.group] = acc[ch.group] || [];
     acc[ch.group].push(ch);
     return acc;

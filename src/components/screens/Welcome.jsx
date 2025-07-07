@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import styles from "./WelcomeScreen.module.css";
-import logo from "../assets/logo-sheep-no-bg.png";
+import styles from "./Welcome.module.css";
+import logo from "../../assets/logo-sheep-no-bg.png";
 
-const WelcomeScreen = () => {
+const Welcome = () => {
   const [showText, setShowText] = useState(false);
 
   useEffect(() => {
@@ -28,4 +28,4 @@ const WelcomeScreen = () => {
   );
 };
 
-export default WelcomeScreen;
+export default Welcome;

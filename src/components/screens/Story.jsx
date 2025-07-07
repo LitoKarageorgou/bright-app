@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import ScreenHeader from "./ScreenHeader";
-import BottomNav from "./BottomNav";
-import StepIndicator from "./StepIndicator";
-import AiButton from "./AiButton";
-import styles from "./StoryScreen.module.css";
-import AiChat from "./AiChat";
+import ScreenHeader from "../common/ScreenHeader";
+import BottomNav from "../common/BottomNav";
+import StepIndicator from "../common/StepIndicator";
+import AiButton from "../common/AiButton";
+import styles from "./Story.module.css";
+import AiChat from "../common/AiChat";
 import {
   IoIosPlayCircle,
   IoIosPause,
@@ -81,7 +81,7 @@ Hercules' name means "glory through Hera's hate." Loved for his heroic deeds, he
 
 /* ─────────────────────────  COMPONENT  ───────────────────────── */
 
-const StoryScreen = () => {
+const Story = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("summary");
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
@@ -240,4 +240,4 @@ const StoryScreen = () => {
   );
 };
 
-export default StoryScreen;
+export default Story;
