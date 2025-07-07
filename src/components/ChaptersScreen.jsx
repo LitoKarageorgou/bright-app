@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import ScreenHeader from "../components/ScreenHeader";
-import BottomNav from "../components/BottomNav";
-import Modal from "../components/Modal";
-import styles from "./HistoryChaptersScreen.module.css";
+import ScreenHeader from "./ScreenHeader";
+import BottomNav from "./BottomNav";
+import Modal from "./Modal";
+import styles from "./ChaptersScreen.module.css";
 import sheep from "../assets/sheep-right.png";
 
 const chapters = [
@@ -49,7 +49,7 @@ const chapters = [
   },
 ];
 
-const HistoryChaptersScreen = () => {
+const ChaptersScreen = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [expandedChapter, setExpandedChapter] = useState(null);
   const navigate = useNavigate();
@@ -150,4 +150,4 @@ const HistoryChaptersScreen = () => {
   );
 };
 
-export default HistoryChaptersScreen;
+export default ChaptersScreen;

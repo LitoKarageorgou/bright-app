@@ -1,5 +1,3 @@
-/* components/LessonStepLayout.module.css */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -83,7 +81,7 @@
 .leftArrow {
   transform: rotate(180deg);
   display: inline-block;
-} 
+}
 
 @keyframes popFade {
   0% {

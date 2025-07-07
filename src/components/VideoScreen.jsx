@@ -1,12 +1,12 @@
 import { useState, useRef, useEffect } from "react";
-import ScreenHeader from "../components/ScreenHeader";
-import BottomNav from "../components/BottomNav";
-import StepIndicator from "../components/StepIndicator";
-import AiButton from "../components/AiButton";
-import styles from "./HerculesVideoScreen.module.css";
+import ScreenHeader from "./ScreenHeader";
+import BottomNav from "./BottomNav";
+import StepIndicator from "./StepIndicator";
+import AiButton from "./AiButton";
+import styles from "./VideoScreen.module.css";
 import { IoIosPlay } from "react-icons/io";
 import herculesVideo from "../assets/hercules-video.mp4";
-import AiChat from "../components/AiChat";
+import AiChat from "./AiChat";
 import { useNavigate } from "react-router-dom";
 
 const HerculesVideoScreen = () => {

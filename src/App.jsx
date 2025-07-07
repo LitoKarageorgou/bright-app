@@ -4,10 +4,10 @@ import WelcomeScreen from './components/WelcomeScreen';
 import LoginScreen from './components/LoginScreen';
 import GradeSelectionScreen from './components/GradeSelectionScreen';
 import CourseSelectionScreen from './components/CourseSelectionScreen';
-import HistoryChaptersScreen from './components/HistoryChaptersScreen';
-import HerculesVideoScreen from './components/HerculesVideoScreen';
-import HerculesStoryScreen from './components/HerculesStoryScreen';
-import HerculesQuizScreen from './components/HerculesQuizScreen';
+import ChaptersScreen from './components/ChaptersScreen';
+import VideoScreen from './components/VideoScreen';
+import StoryScreen from './components/StoryScreen';
+import QuizScreen from './components/QuizScreen';
 import CelebrationScreen from './components/CelebrationScreen';
 
 function App() {
@@ -18,10 +18,10 @@ function App() {
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/grades" element={<GradeSelectionScreen />} />
         <Route path="/courses" element={<CourseSelectionScreen />} />
-        <Route path="/courses/history" element={<HistoryChaptersScreen />} />
-        <Route path="/courses/history/hercules/video" element={<HerculesVideoScreen />} />
-        <Route path="/courses/history/hercules/story" element={<HerculesStoryScreen />} />
-        <Route path="/courses/history/hercules/quiz" element={<HerculesQuizScreen />} />
+        <Route path="/courses/history" element={<ChaptersScreen />} />
+        <Route path="/courses/history/hercules/video" element={<VideoScreen />} />
+        <Route path="/courses/history/hercules/story" element={<StoryScreen />} />
+        <Route path="/courses/history/hercules/quiz" element={<QuizScreen />} />
         <Route path="/courses/history/hercules/celebration" element={<CelebrationScreen />} />
       </Routes>
     </Router>

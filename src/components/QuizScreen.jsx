@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import ScreenHeader from "../components/ScreenHeader";
-import BottomNav from "../components/BottomNav";
-import StepIndicator from "../components/StepIndicator";
-import AiButton from "../components/AiButton";
-import AiChat from "../components/AiChat";
-import styles from "./HerculesQuizScreen.module.css";
+import ScreenHeader from "./ScreenHeader";
+import BottomNav from "./BottomNav";
+import StepIndicator from "./StepIndicator";
+import AiButton from "./AiButton";
+import AiChat from "./AiChat";
+import styles from "./QuizScreen.module.css";
 import { useNavigate } from "react-router-dom";
 
 const HerculesQuizScreen = () => {
