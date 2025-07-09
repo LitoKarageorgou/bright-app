@@ -53,7 +53,8 @@ Bright is a mobile-first React web app that transforms learning into an interact
 
 ## 🚀 Live Demo
 
-[🔗 View Live Demo](https://bright-education.netlify.app/) (recommended resolution: 360×700 - mobile viewport)
+[🔗 View Live Demo](https://bright-education.netlify.app/) (best viewed on mobile — recommended viewport width: 360px)
+
 
 ## 👩‍💻 Author
 
