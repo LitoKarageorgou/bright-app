@@ -49,7 +49,7 @@ Bright is a mobile-first React web app that transforms learning into an interact
 
 ## 🎥 Video Preview
 
-| [Bright demo preview](./assets/bright-demo.gif) | (gif file - no sound available)
+| [Bright demo preview](public/bright-demo.gif) | (gif file - no sound available)
 
 ## 🚀 Live Demo
 
