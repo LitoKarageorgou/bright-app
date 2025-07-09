@@ -30,13 +30,14 @@ const Video = () => {
       .play()
       .then(() => {
         setHasPlayed(true);
-        if (video.requestFullscreen) {
-          video.requestFullscreen();
-        } else if (video.webkitRequestFullscreen) {
-          video.webkitRequestFullscreen();
-        } else if (video.msRequestFullscreen) {
-          video.msRequestFullscreen();
-        }
+        // Fullscreen
+        // if (video.requestFullscreen) {
+        //   video.requestFullscreen();
+        // } else if (video.webkitRequestFullscreen) {
+        //   video.webkitRequestFullscreen();
+        // } else if (video.msRequestFullscreen) {
+        //   video.msRequestFullscreen();
+        // }
       })
       .catch((err) => {
         console.error("Playback failed:", err);
