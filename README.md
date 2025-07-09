@@ -1,4 +1,4 @@
-# 🌟 Bright – Educational Mobile App for Student with ADHD
+# 🌟 Bright – Educational Mobile App for Students with ADHD
 
 Bright is an innovative prototype app designed to help students with ADHD and attention difficulties engage more effectively with school material. Initially developed with two teammates during the **OpenHackathon 2025**, it was later fully redesigned and rebuilt from scratch using **React.js** as a solo project.
 
@@ -6,7 +6,7 @@ Bright is an innovative prototype app designed to help students with ADHD and at
 
 ## 🎯 Project Description
 
-Bright is a mobile-first React web app that transforms learning into an interactive 3-step journey (Watch ➝ Read ➝ Quiz), enhanced with AI tutoring and gamified feedback. It’s optimized for ADHD learners, minimizing distractions and supporting retention through:
+Bright is a mobile-first React web app that transforms learning into an interactive 3-step journey (Watch ➝ Read ➝ Quiz), enhanced with AI tutoring and gamified feedback. It’s optimised for ADHD learners, minimising distractions and supporting retention through:
 
 - Visual structure and clarity
 - Multimedia microlearning
@@ -22,16 +22,16 @@ Bright is a mobile-first React web app that transforms learning into an interact
 - 🧩 Interactive quizzes with XP feedback and animations
 - 🤖 Built-in AI tutor (OpenAI API) for contextual help and educational minigames
 - 🎯 Gamified XP system for motivation and progress
-- 📱 Fully responsive UI with distraction-minimized layout
+- 📱 Fully responsive UI with distraction-minimised layout
 - 🔁 Modular routing per chapter and learning step
 
 ---
 
 ## 🗺️ Prototype Scope
 
-- Features one fully functional chapter based on 3rd-grade Greek Ministry of Education curriculum (translated)
+- Features one fully functional chapter based on the 3rd-grade Greek Ministry of Education curriculum (translated)
 - Designed as a proof of concept for a scalable platform covering all grades and subjects
-- Future plans include AI personalization, curriculum expansion, and accessibility features
+- Future plans include AI personalisation, curriculum expansion, and accessibility features
 
 ---
 
@@ -49,7 +49,7 @@ Bright is a mobile-first React web app that transforms learning into an interact
 
 ## 🎥 Video Preview
 
-|[Bright demo preview](./assets/bright-demo.gif) | (gif file - no sound available)
+| [Bright demo preview](./assets/bright-demo.gif) | (gif file - no sound available)
 
 ## 🚀 Live Demo
 
