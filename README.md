@@ -1,59 +1,66 @@
-🧠 Bright – Learning Reimagined for Neurodiverse Students
+# 🌟 Bright – Educational Mobile App for Student with ADHD
 
-Bright is a prototype web app that transforms school material into short, interactive micro-lessons designed to support learners with ADHD and short attention spans. It uses multimodal presentation (video, text, quiz), gamified feedback, and a distraction-minimizing UI to enhance engagement and retention.
+Bright is an innovative prototype app designed to help students with ADHD and attention difficulties engage more effectively with school material. Initially developed with two teammates during the **OpenHackathon 2025**, it was later fully redesigned and rebuilt from scratch using **React.js** as a solo project.
 
-📌 Features
+---
 
-🎬 AI-generated animated video lessons
+## 🎯 Project Description
 
-📖 Sentence-by-sentence read-aloud story mode
+Bright is a mobile-first React web app that transforms learning into an interactive 3-step journey (Watch ➝ Read ➝ Quiz), enhanced with AI tutoring and gamified feedback. It’s optimized for ADHD learners, minimizing distractions and supporting retention through:
 
-🧠 Interactive quiz with instant XP feedback
+- Visual structure and clarity
+- Multimedia microlearning
+- XP-based progress feedback
+- Built-in AI tutor for real-time assistance
 
-🤖 Built-in AI tutor for on-demand clarification and games
+---
 
-🌈 Clean, focus-optimized interface
+## ✨ Key Features
 
-🏆 Gamified XP system for motivation
+- 🎥 AI-generated animated video lessons
+- 🧠 Sentence-by-sentence read-aloud story mode (Web Speech API)
+- 🧩 Interactive quizzes with XP feedback and animations
+- 🤖 Built-in AI tutor (OpenAI API) for contextual help and educational minigames
+- 🎯 Gamified XP system for motivation and progress
+- 📱 Fully responsive UI with distraction-minimized layout
+- 🔁 Modular routing per chapter and learning step
 
-🇬🇷 Based on Greek Ministry of Education content (translated)
+---
 
-🚧 Current Status
+## 🗺️ Prototype Scope
 
-This is a prototype featuring one chapter from one subject of the third grade of elementary school.
+- Features one fully functional chapter based on 3rd-grade Greek Ministry of Education curriculum (translated)
+- Designed as a proof of concept for a scalable platform covering all grades and subjects
+- Future plans include AI personalization, curriculum expansion, and accessibility features
 
-Future plans include expanding to cover the full curriculum across grades and subjects.
+---
 
-🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-React.js
+- React.js (SPA)
+- React Router
+- OpenAI API (AI chat logic)
+- Web Speech API (Text-to-Speech)
+- CSS Modules
+- HTML5 Video
+- Custom state handling
 
-CSS Modules
+---
 
-OpenAI API (AI tutor)
+## 🎥 Video Preview
 
-HTML5 Video
+|[Bright demo preview](./assets/bright-demo.gif) | (gif file - no sound available)
 
-Custom state handling (no external state lib)
+## 🚀 Live Demo
 
-🚀 Getting Started
+[🔗 View Live Demo](https://bright-education.netlify.app/) (best viewed in a 360×700 mobile viewport)
 
-To run locally:
-npm install
-npm start
+## 👩‍💻 Author
 
-📁 Structure
+**[Lito Karageorgou]** – Front-End Developer 
 
-components/ → Reusable UI components (AiChat, Modal, etc.)
+📫 Contact: [lito.karageorgou@yahoo.com]  
+🔗 GitHub: [https://github.com/LitoKarageorgou?tab=repositories]
 
-screens/ → Main screens: Video, Story, Quiz, Celebration
-
-assets/ → Images, audio, and videos
-
-API/ → AI assistant integration logic
-
-🙋 About the Creator
-
-Developed by Lito Karageorgou, a psychologist and developer passionate about accessibility in education. Originally conceptualised in the OpenHackathon 2025 along with two other teammates, Bright was later redesigned and rebuilt from scratch as a solo project.
 
 
