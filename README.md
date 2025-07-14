@@ -61,7 +61,4 @@ Bright is a mobile-first React web app that transforms learning into an interact
 **[Lito Karageorgou]** – Front-End Developer 
 
 📫 Contact: [lito.karageorgou@yahoo.com]  
-🔗 LinkedIn: [https://www.linkedin.com/in/lito-karageorgou/]
-
-
-
+💼 LinkedIn: [https://www.linkedin.com/in/lito-karageorgou/]
