@@ -22,7 +22,7 @@ Bright is a mobile-first React web app that transforms learning into an interact
 - 🧩 Interactive quizzes with XP feedback and animations
 - 🤖 Built-in AI tutor (OpenAI API) for contextual help and educational minigames
 - 🎯 Gamified XP system for motivation and progress
-- 📱 Fully responsive UI with distraction-minimised layout
+- 📱  Distraction-minimised UI
 - 🔁 Modular routing per chapter and learning step
 
 ---
